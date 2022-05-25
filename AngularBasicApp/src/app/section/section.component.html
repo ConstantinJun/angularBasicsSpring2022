@@ -1,4 +1,4 @@
 <div class="d-flex">
-  <app-left-section></app-left-section>
-  <app-book-list></app-book-list>
+  <app-left-section (Author)="setAuthor($event)"></app-left-section>
+  <app-book-list [author]="parentAuthor" ></app-book-list>
 </div>

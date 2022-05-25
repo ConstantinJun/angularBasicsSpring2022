@@ -6,7 +6,13 @@ import books from './shared/books.json'
 })
 export class BooksManagerService {
   books: any = books;
+  authorOutput: number;
 
   constructor() {
   }
+
+  viewTest(){
+    return this.authorOutput;
+  }
+
 }

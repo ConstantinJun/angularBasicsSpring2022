@@ -1,14 +1,18 @@
-<ul class="nav flex-column m-lg-3">
-  <li class="nav-item">
-    <a class="nav-link active" href="#">Active</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled" href="#">Disabled</a>
-  </li>
-</ul>
+<form  [formGroup]="FormGroup" (ngSubmit)="setValue()">
+<div class="form-row align-items-center">
+  <div class="col-auto my-1">
+    <label class="mr-sm-2" for="inlineFormCustomSelect">Author:</label>
+    <select formControlName="booksOption" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+      <option selected>Choose...</option>
+      <option value="Terry Brooks">Terry Brooks</option>
+      <option value="Maeve Binchy">Maeve Binchy</option>
+      <option value="Linda van Rijn">Linda van Rijn</option>
+      <option value="Nicholas Sparks">Nicholas Sparks</option>
+      <option value="John Irving">John Irving</option>
+      <option value="Sophie Kinsella">Sophie Kinsella</option>
+      <option value="Khaled Hosseini">Khaled Hosseini</option>
+    </select>
+  </div>
+    <button type="submit" class="btn btn-primary">Submit</button>'
+</div>
+</form>

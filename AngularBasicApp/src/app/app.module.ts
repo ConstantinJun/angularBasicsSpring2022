@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { MatSliderModule } from '@angular/material/slider';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {ReactiveFormsModule} from "@angular/forms";
 
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -8,6 +11,8 @@ import { SectionComponent } from './section/section.component';
 import { BookListComponent } from './book-list/book-list.component';
 import { BookItemComponent } from './book-list/book-item/book-item.component';
 import { LeftSectionComponent } from './section/left-section/left-section.component';
+
+
 
 
 @NgModule({
@@ -22,7 +27,9 @@ import { LeftSectionComponent } from './section/left-section/left-section.compon
   imports: [
     BrowserModule,
     NgbModule,
-
+    BrowserAnimationsModule,
+    MatSliderModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

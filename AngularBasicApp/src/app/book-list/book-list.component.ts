@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {BooksManagerService} from "../books-manager.service";
 
 @Component({
@@ -9,6 +9,8 @@ import {BooksManagerService} from "../books-manager.service";
 export class BookListComponent implements OnInit {
 
     mochaBooks: {}[];
+    @Input() author;
+
 
   constructor(private service: BooksManagerService) {
     this.mochaBooks = service.books;
@@ -16,5 +18,7 @@ export class BookListComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+
 
 }

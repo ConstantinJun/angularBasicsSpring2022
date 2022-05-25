@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class BookItemComponent implements OnInit {
 @Input() bookItem;
-
+@Input() bookAuthor;
   constructor() { }
 
   ngOnInit(): void {

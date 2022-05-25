@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SectionComponent implements OnInit {
 
+  parentAuthor;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  setAuthor(value:number){
+    this.parentAuthor = value;
   }
 
 }
